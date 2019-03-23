@@ -1,4 +1,4 @@
-# :zip: Make your battery life better
+# Make your battery life better
 
 Sending notification when your battery is <20% and >80%
 
