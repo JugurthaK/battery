@@ -13,10 +13,9 @@ def getBattery():
     f.close()
     return content
 
-level = getBattery()
 while 1 == 1:
-    if level <= 20:
-        sendNotif('Il faut te brancher', 'Tu as %d de batterie' % level)
-    elif level >= 80 :
+    if getBattery() <= 60:
+        sendNotif('Il faut te brancher', 'Tu as %d%% de batterie' % getBattery())
+    elif getBattery() >= 80 :
         sendNotif('Il faut te debrancher', ' ')
     sleep(300)
